@@ -2,7 +2,7 @@ from pydantic import BaseModel
 from typing import Optional
 
 class Character(BaseModel):
-    id: Optional[str]
+    id: Optional[int]
     name: str
     height: int
     mass: int
