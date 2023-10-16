@@ -1,6 +1,6 @@
 from pydantic import BaseModel
 
-
+# Schema for endpoints for characters methods http
 class CharacterSchema(BaseModel):
     id: int
     name: str
