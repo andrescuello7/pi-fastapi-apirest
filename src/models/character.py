@@ -1,17 +1,13 @@
-from sqlalchemy import Table, Column
-from sqlalchemy.sql.sqltypes import Integer, String
-from config.database import meta, engine
+from sqlalchemy import Column, Integer, String
+from config.database import Base
 
-character = Table(
-    "characters",
-    meta,
-    Column("id", Integer, primary_key=True),
-    Column("name", String(255)),
-    Column("height", Integer),
-    Column("mass", Integer),
-    Column("hair_color", String(255)),
-    Column("skin_color", String(255)),
-    Column("eye_color", String(255)),
-)
 
-meta.create_all(engine)
+class CharacterModel(Base):
+    __tablename__ = "characters"
+    id = Column(Integer, primary_key=True, index=True)
+    name = Column(String(255))
+    height = Column(Integer)
+    mass = Column(Integer)
+    hair_color = Column(String(255))
+    skin_color = Column(String(255))
+    eye_color = Column(String(255))

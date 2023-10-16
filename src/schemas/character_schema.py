@@ -1,11 +1,11 @@
 from pydantic import BaseModel
-from typing import Optional
 
-class Character(BaseModel):
-    id: Optional[int]
+
+class CharacterSchema(BaseModel):
+    id: int
     name: str
-    height: int
-    mass: int
+    height: float
+    mass: float
     hair_color: str
     skin_color: str
     eye_color: str

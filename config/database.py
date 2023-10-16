@@ -1,8 +1,18 @@
-from sqlalchemy import create_engine, MetaData
+from sqlalchemy.ext.declarative import declarative_base
+from sqlalchemy.orm import sessionmaker
+from sqlalchemy import create_engine
 from decouple import config
 
-engine = create_engine(config('DATABASE_URL'))
+engine = create_engine(config("DATABASE_URL"))
 
-meta = MetaData()
+Session = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 
-conn = engine.connect()
+Base = declarative_base()
+
+
+def get_db():
+    try:
+        db = Session()
+        yield db
+    finally:
+        db.close()
