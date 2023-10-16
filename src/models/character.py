@@ -1,7 +1,7 @@
 from sqlalchemy import Column, Integer, String
 from config.database import Base
 
-
+# CharacterModel implementation
 class CharacterModel(Base):
     __tablename__ = "characters"
     id = Column(Integer, primary_key=True, index=True)
