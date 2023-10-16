@@ -20,4 +20,4 @@ typing==3.7.4.3
 typing_extensions==4.8.0
 uvicorn==0.23.2
 wheel==0.37.1
-decouple==3.4
+decouple
