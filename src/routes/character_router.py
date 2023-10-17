@@ -42,7 +42,7 @@ def find_character_by_id(id: int, db: Session = Depends(get_db)):
 
 # Create Character with model of schema
 @router.post(path.post_character)
-def createCharacter(req: CharacterSchema, db: Session = Depends(get_db)):
+def create_character(req: CharacterSchema, db: Session = Depends(get_db)):
     response = CharacterModel(
         name=req.name,
         height=req.height,
@@ -60,7 +60,7 @@ def createCharacter(req: CharacterSchema, db: Session = Depends(get_db)):
 
 
 # Delete Character for ID of url parameter
-@router.delete(path.get_character_by_id, response_model=CharacterSchema)
+@router.delete(path.delete_character)
 def delete_character(id: int, db: Session = Depends(get_db)):
     response = db.query(CharacterModel).filter_by(id=id).first()
     db.delete(response)
