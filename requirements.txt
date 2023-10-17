@@ -7,7 +7,7 @@ fastapi==0.103.2
 greenlet==3.0.0
 h11==0.14.0
 idna==3.4
-pip==23.2.1
+mysql-connector-python-rf==2.2.2
 pycparser==2.21
 pydantic==2.4.2
 pydantic_core==2.10.1
@@ -20,4 +20,3 @@ typing==3.7.4.3
 typing_extensions==4.8.0
 uvicorn==0.23.2
 wheel==0.37.1
-decouple
