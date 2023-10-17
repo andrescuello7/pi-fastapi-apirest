@@ -55,7 +55,7 @@ def create_character(req: CharacterSchema, db: Session = Depends(get_db)):
     db.commit()
     db.refresh(response)
     if response:
-        return requestResponse.response("Character created!", HttpStatus.CREATED)
+        return response
     return requestResponse.error("Character not saved", HttpStatus.CONFLICT)
 
 
