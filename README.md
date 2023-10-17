@@ -32,6 +32,16 @@ cd app/
 uvicorn app:app --reload
 ```
 
+## Testing:
+Added Unit Testing
+- Run testing of methods
+
+```bash
+python -m unittest tests.main_tests
+```
+
+![Preview Image](https://github.com/andrescuello7/pi-fastapi-apirest/assets/72234490/cdef8d2f-b957-4a0a-bcc7-fce7ab94d630)
+
 ## Swagger:
 Added Swagger for default in FastAPI 
 - Redirect for swagger in root route
