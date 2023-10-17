@@ -9,6 +9,6 @@ pydantic==2.4.2
 pydantic_core==2.10.1
 PyMySQL==1.1.0
 SQLAlchemy==2.0.22
-typing==3.7.4.3
-typing_extensions==4.8.0
+typing
+typing_extensions
 uvicorn==0.23.2
