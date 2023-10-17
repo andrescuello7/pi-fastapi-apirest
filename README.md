@@ -1,6 +1,7 @@
 # FastApi - ApiRest
 
 Challenge of API with framework FastAPI -> Python!
+- URL [```Pi/Fastapi```](https://pi-fastapi-apirest-production.up.railway.app/)
 
 ![Preview Image](https://github.com/andrescuello7/pi-fastapi-apirest/assets/72234490/fc46f1e3-3128-453c-9942-59aed12dbaa5)
 
