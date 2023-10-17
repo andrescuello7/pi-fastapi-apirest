@@ -1,7 +1,7 @@
 from fastapi import FastAPI
-from src.routes.character import router
 from config.database import engine
-from src.models.character import Base
+from src.routes.character_router import router
+from src.models.character_models import Base
 
 #Server running from FastAPI
 app = FastAPI()
