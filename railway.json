@@ -4,6 +4,6 @@
     "builder": "NIXPACKS"
   },
   "deploy": {
-    "startCommand": "uvicorn app:app"
+    "startCommand": "uvicorn main:app"
   }
 }
